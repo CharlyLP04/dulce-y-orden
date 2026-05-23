@@ -1,20 +1,24 @@
 # 🍽️ Dulce & Orden
 
-> SaaS de gestión de pedidos y control operativo para cafeterías y restaurantes pequeños.
+> SaaS de gestión de inventario y pedidos para cafeterías y restaurantes pequeños.
 
 ## 🚀 ¿Qué problema resuelve?
 
-Los restaurantes pequeños gestionan pedidos con libretas, WhatsApp y Excel.
-Esto genera errores frecuentes, retrasos y pérdida de información.
-**Dulce & Orden** digitaliza el proceso completo desde la toma de pedido hasta el cierre de caja.
+Los restaurantes pequeños controlan su inventario con libretas,
+Excel o simplemente de memoria. Esto genera desabasto inesperado,
+pérdida de dinero y desorganización operativa.
+
+**Dulce & Orden** permite registrar pedidos de forma digital,
+generar tickets automáticamente y descontar los ingredientes
+del inventario en tiempo real — sin esfuerzo extra.
 
 ## ✨ Funcionalidades principales
 
-- 📋 Gestión de pedidos en tiempo real
-- 🍳 Panel de cocina con estado por pedido
-- 🪑 Control de mesas (disponible / ocupada / reservada)
-- 📊 Dashboard de ventas diarias
-- 📦 Alertas de inventario
+- 🧾 Registro de pedidos desde cualquier dispositivo
+- 🎟️ Generación automática de ticket digital por pedido
+- 📦 Descuento automático de inventario al generar el ticket
+- 📊 Dashboard de stock en tiempo real
+- 🔔 Alertas cuando un ingrediente está por agotarse
 - 🔐 Roles de usuario: administrador, mesero, cocina
 
 ## 🛠️ Stack tecnológico
@@ -36,6 +40,7 @@ dulce-y-orden/
 ├── server/          # Backend Node.js
 ├── docs/            # Documentación técnica
 └── README.md
+
 ## 👥 Equipo
 
 | Nombre | Rol |
