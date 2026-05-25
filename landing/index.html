@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dulce & Orden — Control de pedidos e inventario</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========================
+       NAVBAR
+  ======================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <!-- Logo textual con símbolo decorativo -->
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">☕</span>
+        <span class="logo-text">Dulce <em>&</em> Orden</span>
+      </a>
+
+      <!-- Links de navegación -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#problema">Problema</a></li>
+        <li><a href="#solucion">Solución</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#cta-final" class="nav-cta">Solicitar info</a></li>
+      </ul>
+
+      <!-- Botón hamburguesa para móvil -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========================
+       HERO
+  ======================== -->
+  <section class="hero" id="inicio">
+    <!-- Decoración de fondo -->
+    <div class="hero-bg-decor" aria-hidden="true">
+      <div class="decor-circle decor-circle--1"></div>
+      <div class="decor-circle decor-circle--2"></div>
+      <div class="decor-grain"></div>
+    </div>
+
+    <div class="hero-content">
+      <!-- Etiqueta pequeña superior -->
+      <span class="hero-badge">🍰 Para cafeterías y pastelerías</span>
+
+      <!-- Título principal -->
+      <h1 class="hero-title">
+        Controla pedidos e inventario
+        <em>sin complicaciones</em>
+      </h1>
+
+      <!-- Subtítulo -->
+      <p class="hero-subtitle">
+        Automatiza pedidos, genera tickets digitales y mantén tu inventario
+        actualizado en tiempo real.
+      </p>
+
+      <!-- CTA principal -->
+      <a href="#cta-final" class="btn btn--primary" id="hero-cta">
+        Solicitar información
+        <span class="btn-arrow">→</span>
+      </a>
+
+      <!-- Indicadores de confianza -->
+      <div class="hero-trust">
+        <span>✓ Sin papeles</span>
+        <span>✓ Sin Excel</span>
+        <span>✓ Sin errores</span>
+      </div>
+    </div>
+
+    <!-- Mockup visual del dashboard (SVG ilustrativo) -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="mockup-card">
+        <div class="mockup-header">
+          <div class="mockup-dot"></div>
+          <div class="mockup-dot"></div>
+          <div class="mockup-dot"></div>
+          <span class="mockup-title-bar">Dashboard — Dulce & Orden</span>
+        </div>
+        <div class="mockup-body">
+          <!-- Fila de métricas -->
+          <div class="mockup-stats">
+            <div class="mockup-stat">
+              <span class="stat-num">24</span>
+              <span class="stat-label">Pedidos hoy</span>
+            </div>
+            <div class="mockup-stat">
+              <span class="stat-num">$3,480</span>
+              <span class="stat-label">Ventas</span>
+            </div>
+            <div class="mockup-stat mockup-stat--alert">
+              <span class="stat-num">⚠ 2</span>
+              <span class="stat-label">Alertas</span>
+            </div>
+          </div>
+          <!-- Mini lista de pedidos -->
+          <div class="mockup-list">
+            <div class="mockup-item mockup-item--new">
+              <span class="item-badge">NUEVO</span>
+              <span>Mesa 4 — Latte + Pay de queso</span>
+            </div>
+            <div class="mockup-item">
+              <span class="item-badge item-badge--done">LISTO</span>
+              <span>Mesa 2 — Cappuccino + Croissant</span>
+            </div>
+            <div class="mockup-item">
+              <span class="item-badge">EN PROCESO</span>
+              <span>Mesa 7 — Café americano x2</span>
+            </div>
+          </div>
+          <!-- Barra de inventario -->
+          <div class="mockup-inventory">
+            <span class="inv-label">Harina (kg)</span>
+            <div class="inv-bar"><div class="inv-fill" style="width:30%"></div></div>
+            <span class="inv-warn">⚠ Bajo stock</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       PROBLEMA
+  ======================== -->
+  <section class="section problema" id="problema">
+    <div class="container">
+      <!-- Etiqueta de sección -->
+      <span class="section-label">El problema actual</span>
+
+      <h2 class="section-title">
+        ¿Sigues usando Excel y libretas<br />para controlar tu negocio?
+      </h2>
+
+      <p class="section-intro">
+        La mayoría de las cafeterías y pastelerías pequeñas aún gestionan
+        sus operaciones de forma manual. Esto genera problemas reales todos los días.
+      </p>
+
+      <!-- Tarjetas de problema -->
+      <div class="problema-grid">
+        <div class="problema-card" data-reveal>
+          <div class="problema-icon">📋</div>
+          <h3>Libretas y hojas sueltas</h3>
+          <p>Los pedidos se anotan a mano, se pierden o se leen mal. Un error puede arruinar la experiencia del cliente.</p>
+        </div>
+        <div class="problema-card" data-reveal>
+          <div class="problema-icon">📊</div>
+          <h3>Excel desactualizado</h3>
+          <p>El inventario en Excel nunca refleja la realidad. Actualizarlo toma tiempo y nadie sabe quién tiene la versión correcta.</p>
+        </div>
+        <div class="problema-card" data-reveal>
+          <div class="problema-icon">⏳</div>
+          <h3>Pérdida de tiempo</h3>
+          <p>Contar ingredientes, escribir tickets a mano y cuadrar cuentas al final del día consume horas que podrías invertir en crecer.</p>
+        </div>
+        <div class="problema-card" data-reveal>
+          <div class="problema-icon">😵</div>
+          <h3>Desorganización constante</h3>
+          <p>Sin un sistema claro, los errores se acumulan: pedidos duplicados, faltantes de ingredientes, clientes insatisfechos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       SOLUCIÓN
+  ======================== -->
+  <section class="section solucion" id="solucion">
+    <div class="container">
+      <span class="section-label">Nuestra solución</span>
+      <h2 class="section-title">
+        Una plataforma diseñada<br />para tu negocio
+      </h2>
+      <p class="section-intro">
+        Dulce & Orden centraliza todo en un solo lugar: pedidos, tickets e inventario,
+        actualizados automáticamente en tiempo real.
+      </p>
+
+      <!-- Flujo de pasos -->
+      <div class="flujo">
+        <div class="flujo-paso" data-reveal>
+          <div class="paso-num">01</div>
+          <div class="paso-content">
+            <div class="paso-icon">🧾</div>
+            <h3>Registro de pedidos</h3>
+            <p>El mesero registra el pedido desde cualquier dispositivo en segundos. Sin papel, sin errores de escritura.</p>
+          </div>
+        </div>
+
+        <div class="flujo-conector" aria-hidden="true">↓</div>
+
+        <div class="flujo-paso" data-reveal>
+          <div class="paso-num">02</div>
+          <div class="paso-content">
+            <div class="paso-icon">🎫</div>
+            <h3>Ticket digital automático</h3>
+            <p>El sistema genera automáticamente un ticket digital con número, mesa, productos y hora del pedido.</p>
+          </div>
+        </div>
+
+        <div class="flujo-conector" aria-hidden="true">↓</div>
+
+        <div class="flujo-paso" data-reveal>
+          <div class="paso-num">03</div>
+          <div class="paso-content">
+            <div class="paso-icon">📦</div>
+            <h3>Inventario actualizado</h3>
+            <p>Cada pedido descuenta automáticamente los ingredientes usados. Tu stock siempre está al día, sin intervención manual.</p>
+          </div>
+        </div>
+
+        <div class="flujo-conector" aria-hidden="true">↓</div>
+
+        <div class="flujo-paso" data-reveal>
+          <div class="paso-num">04</div>
+          <div class="paso-content">
+            <div class="paso-icon">🔔</div>
+            <h3>Alertas inteligentes</h3>
+            <p>Cuando un producto o ingrediente está por agotarse, el sistema te avisa antes de que sea un problema.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       BENEFICIOS
+  ======================== -->
+  <section class="section beneficios" id="beneficios">
+    <div class="container">
+      <span class="section-label">¿Por qué elegir Dulce & Orden?</span>
+      <h2 class="section-title">Beneficios reales para tu negocio</h2>
+
+      <div class="beneficios-grid">
+        <!-- Tarjeta 1 -->
+        <div class="beneficio-card" data-reveal>
+          <div class="beneficio-icon-wrap">
+            <span class="beneficio-icon">✅</span>
+          </div>
+          <h3>Menos errores</h3>
+          <p>Al digitalizar el proceso, los errores humanos al anotar o interpretar pedidos desaparecen casi por completo.</p>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="beneficio-card" data-reveal>
+          <div class="beneficio-icon-wrap">
+            <span class="beneficio-icon">⚡</span>
+          </div>
+          <h3>Ahorro de tiempo</h3>
+          <p>Lo que antes tardaba 10 minutos, ahora tarda 30 segundos. Más tiempo para atender clientes y hacer crecer tu negocio.</p>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="beneficio-card" data-reveal>
+          <div class="beneficio-icon-wrap">
+            <span class="beneficio-icon">📦</span>
+          </div>
+          <h3>Inventario siempre actualizado</h3>
+          <p>Olvídate de contar ingredientes manualmente. El sistema lo hace por ti en tiempo real.</p>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="beneficio-card" data-reveal>
+          <div class="beneficio-icon-wrap">
+            <span class="beneficio-icon">🔔</span>
+          </div>
+          <h3>Alertas automáticas</h3>
+          <p>Recibe notificaciones cuando un ingrediente esté por agotarse, antes de que afecte tus ventas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       CTA FINAL
+  ======================== -->
+  <section class="section cta-final" id="cta-final">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-decor" aria-hidden="true">☕</div>
+        <h2 class="cta-title">
+          ¿Quieres mejorar la organización<br />de tu negocio?
+        </h2>
+        <p class="cta-text">
+          Déjanos tu información y te contactaremos para contarte cómo
+          Dulce & Orden puede transformar la operación de tu cafetería o pastelería.
+        </p>
+        <!-- 
+          El atributo href está preparado para reemplazarse con 
+          el link de tu Google Form cuando esté listo.
+          Ejemplo: href="https://forms.gle/TULINK"
+        -->
+        <a
+          href="#"
+          class="btn btn--primary btn--large"
+          id="final-cta"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-form-url=""
+        >
+          Quiero probarlo
+          <span class="btn-arrow">→</span>
+        </a>
+        <p class="cta-disclaimer">Sin compromisos. Solo queremos escucharte.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================
+       FOOTER
+  ======================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">☕ Dulce & Orden</span>
+        <span class="footer-copy">© 2026 · Proyecto universitario · Todos los derechos reservados</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
