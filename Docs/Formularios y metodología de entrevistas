@@ -1,0 +1,15 @@
+Este Pull Request incorpora los instrumentos utilizados para la recolección de datos durante las fases ACT-1 y ACT-2 del proyecto Dulce & Orden. Se documenta la metodología de entrevistas realizadas por medios electrónicos, conforme a los criterios establecidos en la tarea [VALIDATION] Documentar hallazgos de las 10 entrevistas.
+
+## Cambios realizados
+1. Se añade el directorio `docs/entrevistas/formularios/` con los formatos de entrevista digital aplicados.
+2. Se incluye el archivo `docs/metodologia-entrevistas.md` donde se describe el proceso de recolección: selección de muestra, medio electrónico utilizado, periodo de aplicación y estructura de las preguntas.
+3. Se adjunta el formulario base de Google Forms utilizado para estandarizar las respuestas.
+
+## Justificación
+La evidencia de los instrumentos permite validar la trazabilidad del proceso de investigación de usuarios. Las entrevistas por medios electrónicos se seleccionaron para optimizar tiempos de respuesta del segmento objetivo: dueños y gerentes de cafeterías y restaurantes pequeños.
+
+## Criterios de aceptación cumplidos
+- [x] Documentación de metodología en `docs/`
+- [x] Formularios utilizados disponibles en repositorio
+- [x] Alineación con tarea [VALIDATION] de ACT-1 y ACT-2
+https://forms.gle/UjY11CDtPR5KDG9Y7
