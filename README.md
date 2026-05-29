@@ -1,25 +1,17 @@
-# 🍽️ Dulce & Orden
+# 🍔 Burger & Orden
 
-> SaaS de gestión de inventario y pedidos para cafeterías y restaurantes pequeños.
+> SaaS de gestión de comandas, inventario crítico y personalización de pedidos diseñado para negocios de hamburguesas y comida rápida de alta rotación.
 
 ## 🚀 ¿Qué problema resuelve?
 
-Los restaurantes pequeños controlan su inventario con libretas,
-Excel o simplemente de memoria. Esto genera desabasto inesperado,
-pérdida de dinero y desorganización operativa.
+Los negocios de hamburguesas y *fast food* operan bajo una alta carga de estrés en horas pico. La toma de pedidos manual o verbal provoca que las personalizaciones críticas de los clientes (*"sin cebolla"*, *"extra tocino"*, *"término de la carne"*) se lean o escuchen mal en la cocina, generando mermas de comida, retrasos en la parrilla y clientes insatisfechos. Además, la falta de control visual del inventario provoca desabastos imprevistos de insumos clave (como pan brioche o carne) a mitad del servicio nocturno.
 
-**Dulce & Orden** permite registrar pedidos de forma digital,
-generar tickets automáticamente y descontar los ingredientes
-del inventario en tiempo real — sin esfuerzo extra.
+**Burger & Orden** centraliza la operación: permite capturar pedidos con especificaciones detalladas desde el celular del mesero, genera tickets digitales automáticos para el parrillero en tiempo real y descuenta los insumos críticos del inventario al instante para prevenir desabastos.
 
 ## ✨ Funcionalidades principales
 
-- 🧾 Registro de pedidos desde cualquier dispositivo
-- 🎟️ Generación automática de ticket digital por pedido
-- 📦 Descuento automático de inventario al generar el ticket
-- 📊 Dashboard de stock en tiempo real
-- 🔔 Alertas cuando un ingrediente está por agotarse
-- 🔐 Roles de usuario: administrador, mesero, cocina
+Pendientes 
+
 
 ## 🛠️ Stack tecnológico
 
@@ -35,11 +27,14 @@ del inventario en tiempo real — sin esfuerzo extra.
 | Control de versiones | GitHub Flow |
 
 ## 📁 Estructura del proyecto
-dulce-y-orden/
-├── client/          # Frontend React
-├── server/          # Backend Node.js
-├── docs/            # Documentación técnica
-└── README.md
+
+```text
+burger-y-orden/
+├── client/          # Frontend React (Interfaz de captura y pantalla de cocina)
+├── server/          # Backend Node.js (API de pedidos, estados e inventarios)
+├── docs/            # Documentación técnica, minutas y guías de validación
+└── README.md        # Guía principal del proyecto3
+
 
 ## 👥 Equipo
 
